@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Mohave.otf">
+            <string>Mohave</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileTableHeader" customModule="Goe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOL-Yu-3hP">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adventures Hosting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvw-ul-1wQ">
+                            <rect key="frame" x="224" y="6" width="153" height="20"/>
+                            <fontDescription key="fontDescription" name="Mohave" family="Mohave" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pvw-ul-1wQ" firstAttribute="centerX" secondItem="jOL-Yu-3hP" secondAttribute="centerX" id="fpv-d3-lBu"/>
+                        <constraint firstItem="pvw-ul-1wQ" firstAttribute="centerY" secondItem="jOL-Yu-3hP" secondAttribute="centerY" id="gTw-Ne-lb5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jOL-Yu-3hP" secondAttribute="bottom" id="NmJ-Jg-PUI"/>
+                <constraint firstItem="jOL-Yu-3hP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ioV-Vm-ZUh"/>
+                <constraint firstItem="jOL-Yu-3hP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oqN-AK-IXu"/>
+                <constraint firstAttribute="trailing" secondItem="jOL-Yu-3hP" secondAttribute="trailing" id="szX-03-oEt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerLabel" destination="pvw-ul-1wQ" id="tGo-o3-10W"/>
+            </connections>
+            <point key="canvasLocation" x="323" y="158"/>
+        </view>
+    </objects>
+</document>
